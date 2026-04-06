@@ -1,0 +1,25 @@
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+
+rl.question("Digite seu nome: ", (input1) => {
+    const dado1 = input1;
+    rl.question("Digite seu idade: ", (input2) => {
+        const dado2 = parseFloat(input2);
+        rl.question("Possui CNH Carteira Nacional de Habilitação?: ", (input3) => {
+            const dado3 = input3;
+            if(input3 = 'True'){
+        console.log(`Bienvenido ao Programa Lions ${dado1} vc tem habilitação`)
+
+                process.exit()
+            }else{
+            console.log(`Bienvenido ao Programa Lions ${dado1} vc não tem habilitação`)
+
+process.exit()
+            }
+        })   
+})})
